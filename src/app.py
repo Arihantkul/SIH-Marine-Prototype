@@ -46,7 +46,7 @@ with st.container():
     st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Model Selection ---
-models_dir = r"C:\Users\aa\Desktop\Coding\sih-marine-prototype\models"
+models_dir = models_dir = "models"
 per_species_dir = os.path.join(models_dir, "per_species")
 per_length_dir = os.path.join(models_dir, "per_length")
 per_weight_dir = os.path.join(models_dir, "per_weight")

@@ -135,7 +135,7 @@ st.markdown("""
   left: -200px;
   width: 400px;
   z-index: 9999;
-  animation: swim 4s linear infinite;
+  animation: swim 6s;
 }
 .fish-swim2 {
   position: fixed;
@@ -169,6 +169,15 @@ st.markdown("""
   bottom: 10px;
   width: 200px;
   z-index: 9999;
+/* ...existing CSS... */
+
+/* Shrink fish animations and corner GIFs on small screens */
+@media only screen and (max-width: 600px) {
+  .fish-swim, .fish-swim2, .fish-swim-rtl,
+  .corner-fish-left, .corner-fish-right {
+    width: 60px !important;
+  }
+}
 }
 .corner-fish-right {
   position: fixed;
@@ -176,6 +185,13 @@ st.markdown("""
   bottom: 10px;
   width: 200px;
   z-index: 9999;
+  /* Shrink fish animations and corner GIFs on small screens */
+@media only screen and (max-width: 600px) {
+  .fish-swim, .fish-swim2, .fish-swim-rtl,
+  .corner-fish-left, .corner-fish-right {
+    width: 60px !important;
+  }
+}
 }
 .fish-swim-rtl {
   position: fixed;
